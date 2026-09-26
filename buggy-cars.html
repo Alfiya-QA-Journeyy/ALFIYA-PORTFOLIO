@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buggy Cars Registration | Alfiya Khan</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .case-study {
+            max-width: 1000px;
+            margin: auto;
+            padding: 120px 30px 80px;
+        }
+
+        .back-link {
+            color: #a78bfa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .case-study h1 {
+            font-size: 50px;
+            margin: 30px 0 15px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 750px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 50px 0;
+        }
+
+        .summary-card {
+            background: #101017;
+            border: 1px solid #272731;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .summary-card h3 {
+            color: #a78bfa;
+            margin-bottom: 10px;
+        }
+
+        .summary-card p {
+            color: #ccc;
+        }
+
+        .case-section {
+            margin-top: 65px;
+        }
+
+        .case-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .case-section p {
+            color: #bbb;
+            line-height: 1.8;
+        }
+
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .evidence-card {
+            background: #101017;
+            border: 1px solid #272731;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .evidence-card h3 {
+            color: #a78bfa;
+            margin-bottom: 10px;
+        }
+
+        .evidence-card p {
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        .evidence-card img {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .test-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        .test-table th,
+        .test-table td {
+            border: 1px solid #272731;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .test-table th {
+            color: #a78bfa;
+            background: #101017;
+        }
+
+        .test-table td {
+            color: #ccc;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #a78bfa;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+
+            .case-study h1 {
+                font-size: 38px;
+            }
+
+            .summary-grid,
+            .evidence-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .test-table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <main class="case-study">
+
+        <!-- BACK -->
+
+        <a href="index.html" class="back-link">
+            ← Back to Portfolio
+        </a>
+
+
+        <!-- HERO -->
+
+        <h1>Buggy Cars Registration</h1>
+
+        <p class="subtitle">
+            Manual testing project focused on testing the registration
+            page through positive, negative and validation scenarios.
+        </p>
+
+
+        <!-- SUMMARY -->
+
+        <div class="summary-grid">
+
+            <div class="summary-card">
+                <h3>Project Type</h3>
+                <p>Manual Testing</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Test Cases</h3>
+                <p>20+ Registration Test Cases</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Testing Focus</h3>
+                <p>Functional & Negative Testing</p>
+            </div>
+
+        </div>
+
+
+        <!-- OBJECTIVE -->
+
+        <section class="case-section">
+
+            <h2>01 — Objective</h2>
+
+            <p>
+                The objective of this project was to test the Buggy Cars
+                registration page and verify that the registration form
+                behaves correctly for valid and invalid user inputs.
+            </p>
+
+        </section>
+
+
+        <!-- TEST SCENARIOS -->
+
+        <section class="case-section">
+
+            <h2>02 — Test Scenarios</h2>
+
+            <p>
+                I designed test scenarios covering registration fields,
+                required field validation, password validation, input
+                boundaries, form submission and negative user inputs.
+            </p>
+
+        </section>
+
+
+        <!-- SAMPLE TEST CASES -->
+
+        <section class="case-section">
+
+            <h2>03 — Sample Test Cases</h2>
+
+            <table class="test-table">
+
+                <tr>
+                    <th>Test Case ID</th>
+                    <th>Scenario</th>
+                    <th>Expected Result</th>
+                </tr>
+
+                <tr>
+                    <td>TC-001</td>
+                    <td>Register with valid details</td>
+                    <td>Registration should complete successfully</td>
+                </tr>
+
+                <tr>
+                    <td>TC-002</td>
+                    <td>Leave username blank</td>
+                    <td>Appropriate validation should be displayed</td>
+                </tr>
+
+                <tr>
+                    <td>TC-003</td>
+                    <td>Enter invalid password</td>
+                    <td>Password validation should be displayed</td>
+                </tr>
+
+                <tr>
+                    <td>TC-004</td>
+                    <td>Enter mismatched passwords</td>
+                    <td>Registration should not proceed</td>
+                </tr>
+
+                <tr>
+                    <td>TC-005</td>
+                    <td>Test password boundary conditions</td>
+                    <td>Application should enforce password rules</td>
+                </tr>
+
+                <tr>
+                    <td>TC-006</td>
+                    <td>Submit registration form</td>
+                    <td>Application should process the form correctly</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- EVIDENCE -->
+
+        <section class="case-section">
+
+            <h2>04 — Testing Evidence</h2>
+
+            <div class="evidence-grid">
+
+                <!-- REGISTRATION -->
+
+                <div class="evidence-card">
+
+                    <h3>Registration Page</h3>
+
+                    <p>
+                        Registration form used for functional testing.
+                    </p>
+
+                    <img
+                        src="images/Screenshot (405).png"
+                        alt="Buggy Cars Registration Page">
+
+                </div>
+
+
+                <!-- VALIDATION -->
+
+                <div class="evidence-card">
+
+                    <h3>Validation Testing</h3>
+
+                    <p>
+                        Validation scenario tested on the registration
+                        page.
+                    </p>
+
+                    <img
+                        src="images/Screenshot (406).png"
+                        alt="Buggy Cars Registration Validation">
+
+                </div>
+
+
+                <!-- TEST CASES -->
+
+                <div class="evidence-card">
+
+                    <h3>Test Case Documentation</h3>
+
+                    <p>
+                        Documented registration test cases used during
+                        the testing process.
+                    </p>
+
+                    <img
+                        src="images/Screenshot (407).png"
+                        alt="Buggy Cars Test Cases">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TESTING TYPES -->
+
+        <section class="case-section">
+
+            <h2>05 — Testing Performed</h2>
+
+            <p>
+                Functional Testing • Positive Testing • Negative Testing •
+                Boundary Testing • Input Validation • Form Validation •
+                Registration Testing
+            </p>
+
+        </section>
+
+
+        <!-- DOCUMENTATION -->
+
+        <section class="case-section">
+
+            <h2>06 — Documentation</h2>
+
+            <p>
+                Test cases were documented with test case ID, scenario,
+                test data, expected result, actual result and status.
+            </p>
+
+        </section>
+
+
+        <!-- LEARNING -->
+
+        <section class="case-section">
+
+            <h2>07 — What I Learned</h2>
+
+            <p>
+                This project improved my ability to think beyond the
+                normal registration flow and identify different user
+                inputs, validation conditions and negative scenarios.
+            </p>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <section class="case-section" style="text-align:center;">
+
+            <h2>Explore More Projects</h2>
+
+            <p>
+                View my complete portfolio and explore my other
+                Software Testing and API Testing projects.
+            </p>
+
+            <a href="index.html" class="project-link">
+                ← Back to Portfolio
+            </a>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
